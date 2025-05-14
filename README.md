@@ -1,18 +1,31 @@
-# Flashcard Web Application
+# 📚 Palabra | Flashcard Web Application
 
 ## Project Overview
 
-The Flashcard Web Application is designed to facilitate learning through digital flashcards. The application enables users to create, manage, and review flashcards using a spaced repetition algorithm to enhance knowledge retention. The project aims to provide an intuitive and effective tool for learners, allowing them to organize their study materials efficiently while leveraging modern web technologies.
+This Flashcard Web Application is designed to facilitate learning through digital flashcards. The application enables users to create, manage, and review flashcards using a spaced repetition algorithm to enhance knowledge retention. The project aims to provide an intuitive and effective tool for learners, allowing them to organize their study materials efficiently while leveraging modern web technologies.
 
-## Team
+## 👥 Team
 
 This project was developed by a team of four developers, working collaboratively to integrate various technologies and implement a robust learning system. The team included:
-- Kacper Górski
-- Julia Czosnek
-- Marcin Polewski
-- Maciej Cieślik
+- Kacper Górski 🖥️  
+_Lead Frontend Developer & REST API Integration_  
+Architected the React frontend and connected it to Spring Boot APIs.
 
-## Technologies Used
+- Julia Czosnek 🎨  
+_UI/UX Designer & Database Architect_:  
+Designed user interfaces and crafted the MySQL database schema.
+
+- Marcin Polewski ⚙️  
+_Backend Lead & DevOps Engineer_  
+Built core Spring Boot services and managed Docker deployment pipelines.
+
+- Maciej Cieślik 📄  
+_Backend Developer & Technical Documentation Specialist_  
+Implemented backend logic and maintained project documentation.
+
+## 🛠️ Technologies Used
+
+<img src="https://skillicons.dev/icons?i=react,spring,nodejs,mysql,git,docker" />
 
 - **Spring** – Backend development and database management
 - **React** – Frontend development
@@ -21,28 +34,34 @@ This project was developed by a team of four developers, working collaboratively
 - **Git** – Version control and team collaboration
 - **MySQL** – Database management system
 
-## Application Features
+## ✨ Application Features
 
-### 1. User Authentication
+### 1. 🔐 User Authentication
 
 - Secure login with email and password
 - User registration via email
 - Password recovery through email verification
 - OAuth-based login via third-party authentication providers*
 
-### 2. Flashcard Management
+![Login screen](/docs/screenshots/login-screen.png "Authentication Page")
+
+### 2. 📂 Flashcard Management
 
 - Create, modify, and delete flashcards
 - Organize flashcards into customizable folders
 - Support for classic flashcard study modes
 - Import and export functionality for flashcards in multiple formats (txt, pdf)
 
-### 3. Spaced Repetition Algorithm
+![Folder page](/docs/screenshots/deck-folders.jpg "Folder Page")
+
+### 3. ⏳ Spaced Repetition Algorithm
 
 - A dedicated service schedules flashcard reviews using the spaced repetition technique to optimize learning efficiency
 - The algorithm dynamically adjusts review intervals based on user performance and retention rates
 
-### 4. User Progress Tracking
+![Study page](/docs/screenshots/learning.jpg "Study Page")
+
+### 4. 📊 User Progress Tracking
 
 - Track learning progress over time
 - View detailed statistics, including:
@@ -50,18 +69,22 @@ This project was developed by a team of four developers, working collaboratively
    - Number of pending flashcards for review
    - User accuracy and retention rate
 
-### 5. Flashcard Customization
+![User statistics](/docs/screenshots/statistics.jpg "User Statistics Page")
+
+### 5. 🎨 Flashcard Customization
 
 - Flip flashcards (swap front and back content)
 - Store and manage flashcard data securely in the database
 - Advanced search and filtering options for efficient flashcard retrieval
 - Tagging system to categorize flashcards for better organization
 
-## Database Design
+## 🗃️ Database Design
 
-Entity-Relationship (ER) and relational models are available in the files:
-- er_model.png (ER diagram)
-- relational_model.png (Relational model)
+### Relational Model
+![Relational model](/docs/images/relational_model.png "Relational Model")
+
+### Entity-Relationship (ER)
+![Entity-Relationship](/docs/images/er_model.png "Entity-Relationship")
 
 All SQL scripts are located in the database directory. Scripts 00.sql and 01.sql execute automatically at database startup, as specified in the Dockerfile.
 
@@ -78,7 +101,7 @@ The database schema was designed to support scalability and maintain data integr
 - Normalization techniques to prevent data redundancy
 - Efficient relationship mapping to ensure proper entity associations
 
-## Running the Application
+## 🚀 Running the Application
 
 To deploy and manage the application using Docker:
 - Stop and clean the environment:
